@@ -20,7 +20,7 @@ jobs:
         image: postgres:12
         env:
           POSTGRES_USER: root
-          POSGTRES_PASSWORD: secret
+          POSTGRES_PASSWORD: secret
           POSTGRES_DB: simple_bank
         # Set health checks to wait until postgres has started
         options:
