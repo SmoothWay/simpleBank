@@ -17,7 +17,7 @@ func TestMain(m *testing.M) {
 
 	config, err := util.LoadConfig("../../")
 	if err != nil {
-		log.Fatal("error loading config", err)
+		log.Fatal("error loading config:", err)
 	}
 	testDB, err = sql.Open(config.DBDRiver, config.DSN)
 	if err != nil {

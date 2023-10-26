@@ -47,5 +47,8 @@ jobs:
 
     - name: Run migration
       run: make migrateup
+    - name: Create env file
+      run: |
+        echo "${{ secrets.DEV_ENV }}" > app.env
     - name: Test
       run: make test
